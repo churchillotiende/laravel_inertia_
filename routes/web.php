@@ -5,6 +5,11 @@ use Inertia\Inertia;
 
 Route::get('/', function () {
     return Inertia::render('Welcome',[
-        "name" => "OteemediaSolutions"
+        "name" => "OteemediaSolutions",
+        "frameworks" => [
+            "laravel",
+            "vue",
+            "inertia",
+        ]
     ]);
 });
