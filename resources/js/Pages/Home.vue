@@ -1,15 +1,12 @@
 <template>
-    <ul>
-        <li><Link href="/">Home</Link></li>
-        <li><Link href="/users">Users</Link></li>
-        <li><Link href="/settings">Settings</Link></li>
-    </ul>
+    <h1> This is the homepage</h1>
+    <Nav />
 </template>
 
 <script>
-import { Link } from '@inertiajs/vue3';
+import Nav from './Shared/Nav.vue';
 
     export default{
-        components:{Link}
+        components:{Nav}
     }
 </script>
